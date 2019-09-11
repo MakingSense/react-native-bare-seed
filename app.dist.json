@@ -1,0 +1,36 @@
+{
+  "name": "bareseed",
+  "displayName": "React Native Bare Seed",
+  "expo": {
+    "name": "test making sense",
+    "slug": "test-making-sense",
+    "version": "0.1.0",
+    "sdkVersion": "34.0.0",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "entryPoint": "node_modules/expo/AppEntry.js",
+    "ios": {
+      "bundleIdentifier": "com.making.sense.test",
+      "supportsTablet": true,
+      "config": {
+        "usesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "package": "com.making.sense.test",
+      "versionCode": 1
+    },
+    "icon": "./icon.png",
+    "splash": {
+      "image": "./src/assets/images/splash.png"
+    },
+    "privacy": "unlisted",
+    "updates": {
+      "enabled": false,
+      "checkAutomatically": "ON_ERROR_RECOVERY",
+      "fallbackToCacheTimeout": 0
+    }
+  }
+}

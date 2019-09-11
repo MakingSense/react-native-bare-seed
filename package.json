@@ -1,0 +1,146 @@
+{
+  "scripts": {
+    "preandroid": "npx jetify",
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "web": "expo start --web",
+    "start": "react-native start",
+    "start:dev": "yarn build-config:development && yarn start",
+    "start:qa": "yarn build-config:qa && yarn start",
+    "test": "yarn build-config:test && jest --forceExit --detectOpenHandles --watchAll=false --coverage --verbose",
+    "lint": "tslint -c ./tslint.json 'src/**/*.{ts,tsx}'",
+    "prettier": "prettier --parser typescript --single-quote",
+    "prettier:check": "yarn prettier --list-different \"src/**/*.{ts,tsx}\"",
+    "format": "yarn prettier --write \"src/**/*.{ts,tsx}\"",
+    "build-config:development": "cross-env NODE_ENV=development ts-node ./build-config.ts",
+    "build-config:develop": "cross-env NODE_ENV=development ts-node ./build-config.ts",
+    "build-config:qa": "cross-env NODE_ENV=qa ts-node ./build-config.ts",
+    "build-config:stage": "cross-env NODE_ENV=stage ts-node ./build-config.ts",
+    "build-config:production": "cross-env NODE_ENV=production ts-node ./build-config.ts",
+    "build-config:master": "cross-env NODE_ENV=production ts-node ./build-config.ts",
+    "build-config:test": "cross-env NODE_ENV=test ts-node ./build-config.ts",
+    "warn-and-build-config": "echo \"$(tput setaf 1) \n\n\nFOR THE LOVE OF GOD\nDON'T FORGET TO CHANGE THE VERSION NUMBER ON app.json $(tput sgr0)\n\n\n\" && yarn build-config:$(git rev-parse --abbrev-ref HEAD)"
+  },
+  "engines": {
+    "node": ">= 12.0.0"
+  },
+  "pre-commit": [
+    "lint",
+    "prettier:check",
+    "test"
+  ],
+  "dependencies": {
+    "expo": "^34.0.1",
+    "expo-secure-store": "~6.0.0",
+    "react": "16.8.3",
+    "react-dom": "16.8.3",
+    "react-native": "0.59.10",
+    "react-native-elements": "^1.2.0",
+    "react-native-gesture-handler": "~1.3.0",
+    "react-native-reanimated": "~1.1.0",
+    "react-native-screens": "1.0.0-alpha.22",
+    "react-native-unimodules": "~0.5.2",
+    "react-native-vector-icons": "^6.6.0",
+    "react-native-web": "^0.11.4",
+    "react-navigation": "^4.0.3",
+    "react-navigation-stack": "^1.5.5",
+    "react-redux": "^7.1.1",
+    "redux": "^4.0.4",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-observable": "^1.1.0",
+    "rxjs": "^6.5.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@types/enzyme": "^3.10.3",
+    "@types/jest": "^24.0.18",
+    "@types/react": "^16.9.2",
+    "@types/react-native": "^0.60.13",
+    "@types/react-redux": "^7.1.2",
+    "@types/react-test-renderer": "^16.9.0",
+    "@types/redux": "^3.6.0",
+    "@types/redux-devtools-extension": "^2.13.2",
+    "babel-plugin-inline-dotenv": "^1.5.0",
+    "babel-preset-expo": "^6.0.0",
+    "cross-env": "^5.2.1",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "jest-environment-enzyme": "^7.1.1",
+    "jest-enzyme": "^7.1.1",
+    "jest-expo": "^34.0.1",
+    "jetifier": "^1.6.4",
+    "jsdom": "^15.1.1",
+    "npx": "^10.2.0",
+    "pre-commit": "^1.2.2",
+    "prettier": "^1.18.2",
+    "react-test-renderer": "16.8.3",
+    "ts-node": "^8.3.0",
+    "tslib": "^1.10.0",
+    "tslint": "^5.20.0",
+    "tslint-eslint-rules": "^5.4.0",
+    "tslint-react": "^4.0.0",
+    "typescript": "^3.4.5"
+  },
+  "jest": {
+    "preset": "jest-expo",
+    "verbose": false,
+    "setupFilesAfterEnv": [
+      "<rootDir>/jest.setup.ts",
+      "./node_modules/react-native-gesture-handler/jestSetup.js"
+    ],
+    "testEnvironment": "enzyme",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ],
+    "testMatch": [
+      "**/?(*.)(spec|test).[tj]s?(x)"
+    ],
+    "transformIgnorePatterns": [
+      "node_modules/(?!react-native|react-navigation)/"
+    ],
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "<rootDir>/src/**/*.{ts,tsx}",
+      "!<rootDir>/src/test/**/*.ts",
+      "!<rootDir>/src/**/styles.ts",
+      "!<rootDir>/src/modules/models/*.ts",
+      "!<rootDir>/src/modules/state-mgmt/rootState.ts",
+      "!<rootDir>/src/modules/AppRoot.tsx",
+      "!<rootDir>/src/modules/services/ApiService.ts",
+      "!<rootDir>/src/modules/state-mgmt/store.ts",
+      "!<rootDir>/src/modules/routingModule.tsx",
+      "!<rootDir>/src/modules/views/Pad/Main/**/*.*",
+      "!<rootDir>/src/**/index.tsx",
+      "!<rootDir>/src/**/index.ts"
+    ],
+    "coverageReporters": [
+      "lcov",
+      "text",
+      "text-summary"
+    ],
+    "reporters": [
+      "default"
+    ],
+    "coverageDirectory": "./coverage"
+  },
+  "prettier": {
+    "trailingComma": "none",
+    "tabWidth": 2,
+    "useTabs": false,
+    "semi": true,
+    "singleQuote": true,
+    "printWidth": 160,
+    "bracketSpacing": true,
+    "arrowParens": "avoid",
+    "quoteProps": "as-needed",
+    "jsxSingleQuote": false,
+    "jsxBracketSameLine": false,
+    "proseWrap": "preserve"
+  },
+  "private": true
+}
