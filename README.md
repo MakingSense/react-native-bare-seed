@@ -24,11 +24,10 @@ _(Optional. Any additional notes that will help reviewers understand the PR.)_
 ## Commands
 * **installation:** `yarn install`
 * **develop:** `yarn start:dev` *starts the app on development mode*
-* **eject:** `yarn eject` *creates react native app`s build scripts(xcode and/or android studio environment are required). Avoid doing this if possible*
+* **android** `yarn android` *install app on device*
 * **test:** `yarn test` *unit tests*
 * **test:** `yarn test -u` *unit tests with snapshots update. Make sure you really need to update the snapshots by checking the error messages thoroughly*
 * **build-config:** `yarn build-config<environment>` *build app.json and config.json based on the environment(development, qa, stage, production, test)*
-* **expo:** `yarn expo` *access to expo cli installed on this project*
 
 
 ## Scaffolding
