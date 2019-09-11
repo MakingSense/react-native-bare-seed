@@ -1,6 +1,7 @@
 #PROJECT
 app.json
 src/config/config.json
+coverage
 # OSX
 #
 .DS_Store
