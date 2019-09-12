@@ -30,6 +30,7 @@
     "test"
   ],
   "dependencies": {
+    "@react-native-community/blur": "^3.3.1",
     "expo": "^34.0.1",
     "expo-secure-store": "~6.0.0",
     "react": "16.8.3",

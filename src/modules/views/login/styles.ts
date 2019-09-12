@@ -3,7 +3,7 @@ import { STYLE } from '../../../constants';
 
 export default StyleSheet.create({
   heading1: {
-    color: STYLE.COLOR.PRIMARY,
+    color: STYLE.COLOR.WHITE,
     fontSize: STYLE.FONT.SIZE.HEADING_1,
     fontWeight: STYLE.FONT.WEIGHTS.MEDIUM,
     marginBottom: 8,
@@ -11,11 +11,11 @@ export default StyleSheet.create({
     textAlign: 'left'
   },
   heading2: {
-    color: STYLE.COLOR.QUATERNARY,
+    color: STYLE.COLOR.WHITE,
     fontSize: STYLE.FONT.SIZE.HEADING_2,
     fontWeight: STYLE.FONT.WEIGHTS.REGULAR,
     letterSpacing: 0.2,
-    marginBottom: 0
+    marginBottom: 30
   },
   headingError: {
     color: STYLE.COLOR.NONARY,
@@ -26,15 +26,11 @@ export default StyleSheet.create({
   inputContainer: {
     marginBottom: 32
   },
-  inputTemplate: {
-    marginBottom: Platform.OS === 'ios' ? 110 : 55,
-    marginTop: Platform.OS === 'ios' ? 50 : 25
-  },
   input: {
     borderColor: STYLE.COLOR.OCTANARY,
     borderRadius: 4,
     borderWidth: 1,
-    color: STYLE.COLOR.SENARY,
+    color: STYLE.COLOR.WHITE,
     fontSize: STYLE.FONT.SIZE.PARAGRAPH,
     fontWeight: STYLE.FONT.WEIGHTS.REGULAR,
     padding: 16,
@@ -47,27 +43,33 @@ export default StyleSheet.create({
     borderWidth: 1
   },
   inputLabel: {
-    color: STYLE.COLOR.QUATERNARY,
+    color: STYLE.COLOR.WHITE,
     fontSize: STYLE.FONT.SIZE.PARAGRAPH_SMALL,
     fontWeight: STYLE.FONT.WEIGHTS.MEDIUM,
     marginBottom: 10
   },
-  loginContainer: {
-    backgroundColor: STYLE.COLOR.WHITE,
+  container: {
     flex: 1,
     justifyContent: 'flex-start',
-    padding: 24
+    paddingBottom: 20
   },
   keyboardContainer: {
+    paddingHorizontal: 20
+  },
+  footerContainer: {
+    flexDirection: 'column',
     flex: 1,
-    justifyContent: 'space-between',
-    backgroundColor: '#fff'
+    justifyContent: 'flex-end',
+    paddingHorizontal: 20
   },
-  fullScreenImageContainer: {
-    flex: 1
+  footer: {
+    marginBottom: 20,
+    color: STYLE.COLOR.WHITE
   },
-  fullScreenImage: {
-    width: '100%',
-    height: '100%'
+  highlight: {
+    color: 'yellow'
+  },
+  buttonDisabled: {
+    backgroundColor: STYLE.COLOR.QUATERNARY
   }
 });
