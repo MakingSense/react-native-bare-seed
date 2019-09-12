@@ -23,39 +23,6 @@ exports[`Login renders showing errors 1`] = `
       ]
     }
   >
-    <Image
-      onLoadEnd={[Function]}
-      resizeMode="stretch"
-      source={1}
-      style={
-        Object {
-          "bottom": 0,
-          "left": 0,
-          "position": "absolute",
-          "right": 0,
-          "top": 0,
-        }
-      }
-    />
-    <BlurView
-      blurAmount={10}
-      blurType="dark"
-      style={
-        Array [
-          Object {
-            "backgroundColor": "transparent",
-          },
-          Object {
-            "bottom": 0,
-            "left": 0,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-          },
-        ]
-      }
-      viewRef={null}
-    />
     <Text
       style={
         Object {
@@ -71,7 +38,7 @@ exports[`Login renders showing errors 1`] = `
     <Text
       style={
         Object {
-          "color": "#FFF",
+          "color": "#1745D5",
           "fontSize": 23,
           "fontWeight": "600",
           "marginBottom": 8,
@@ -85,7 +52,7 @@ exports[`Login renders showing errors 1`] = `
     <Text
       style={
         Object {
-          "color": "#FFF",
+          "color": "#9FA7BC",
           "fontSize": 17,
           "fontWeight": "400",
           "letterSpacing": 0.2,
@@ -105,7 +72,7 @@ exports[`Login renders showing errors 1`] = `
       <Text
         style={
           Object {
-            "color": "#FFF",
+            "color": "#9FA7BC",
             "fontSize": 13,
             "fontWeight": "600",
             "marginBottom": 10,
@@ -127,7 +94,7 @@ exports[`Login renders showing errors 1`] = `
               "borderColor": "#D5DEF1",
               "borderRadius": 4,
               "borderWidth": 1,
-              "color": "#FFF",
+              "color": "#646565",
               "fontSize": 15,
               "fontWeight": "400",
               "padding": 16,
@@ -138,6 +105,7 @@ exports[`Login renders showing errors 1`] = `
             },
           ]
         }
+        testID="email-input"
         underlineColorAndroid="rgba(0, 0, 0, 0)"
         value="dgeslin@makingsense.com"
       />
@@ -152,7 +120,7 @@ exports[`Login renders showing errors 1`] = `
       <Text
         style={
           Object {
-            "color": "#FFF",
+            "color": "#9FA7BC",
             "fontSize": 13,
             "fontWeight": "600",
             "marginBottom": 10,
@@ -174,7 +142,7 @@ exports[`Login renders showing errors 1`] = `
               "borderColor": "#D5DEF1",
               "borderRadius": 4,
               "borderWidth": 1,
-              "color": "#FFF",
+              "color": "#646565",
               "fontSize": 15,
               "fontWeight": "400",
               "padding": 16,
@@ -185,41 +153,11 @@ exports[`Login renders showing errors 1`] = `
             },
           ]
         }
+        testID="password-input"
         underlineColorAndroid="rgba(0, 0, 0, 0)"
         value="password"
       />
     </View>
-  </View>
-  <View
-    style={
-      Object {
-        "flex": 1,
-        "flexDirection": "column",
-        "justifyContent": "flex-end",
-        "paddingHorizontal": 20,
-      }
-    }
-  >
-    <Text
-      style={
-        Object {
-          "color": "#FFF",
-          "marginBottom": 20,
-        }
-      }
-    >
-      This screen uses 
-      <Text
-        style={
-          Object {
-            "color": "yellow",
-          }
-        }
-      >
-        @react-native-community/blur 
-      </Text>
-      (a native module) to display a blurred background
-    </Text>
     <View
       style={
         Object {
@@ -300,43 +238,10 @@ exports[`Login renders without crashing 1`] = `
       ]
     }
   >
-    <Image
-      onLoadEnd={[Function]}
-      resizeMode="stretch"
-      source={1}
-      style={
-        Object {
-          "bottom": 0,
-          "left": 0,
-          "position": "absolute",
-          "right": 0,
-          "top": 0,
-        }
-      }
-    />
-    <BlurView
-      blurAmount={10}
-      blurType="dark"
-      style={
-        Array [
-          Object {
-            "backgroundColor": "transparent",
-          },
-          Object {
-            "bottom": 0,
-            "left": 0,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-          },
-        ]
-      }
-      viewRef={null}
-    />
     <Text
       style={
         Object {
-          "color": "#FFF",
+          "color": "#1745D5",
           "fontSize": 23,
           "fontWeight": "600",
           "marginBottom": 8,
@@ -350,7 +255,7 @@ exports[`Login renders without crashing 1`] = `
     <Text
       style={
         Object {
-          "color": "#FFF",
+          "color": "#9FA7BC",
           "fontSize": 17,
           "fontWeight": "400",
           "letterSpacing": 0.2,
@@ -370,7 +275,7 @@ exports[`Login renders without crashing 1`] = `
       <Text
         style={
           Object {
-            "color": "#FFF",
+            "color": "#9FA7BC",
             "fontSize": 13,
             "fontWeight": "600",
             "marginBottom": 10,
@@ -392,7 +297,7 @@ exports[`Login renders without crashing 1`] = `
               "borderColor": "#D5DEF1",
               "borderRadius": 4,
               "borderWidth": 1,
-              "color": "#FFF",
+              "color": "#646565",
               "fontSize": 15,
               "fontWeight": "400",
               "padding": 16,
@@ -400,6 +305,7 @@ exports[`Login renders without crashing 1`] = `
             false,
           ]
         }
+        testID="email-input"
         underlineColorAndroid="rgba(0, 0, 0, 0)"
         value="dgeslin@makingsense.com"
       />
@@ -414,7 +320,7 @@ exports[`Login renders without crashing 1`] = `
       <Text
         style={
           Object {
-            "color": "#FFF",
+            "color": "#9FA7BC",
             "fontSize": 13,
             "fontWeight": "600",
             "marginBottom": 10,
@@ -436,7 +342,7 @@ exports[`Login renders without crashing 1`] = `
               "borderColor": "#D5DEF1",
               "borderRadius": 4,
               "borderWidth": 1,
-              "color": "#FFF",
+              "color": "#646565",
               "fontSize": 15,
               "fontWeight": "400",
               "padding": 16,
@@ -444,41 +350,11 @@ exports[`Login renders without crashing 1`] = `
             false,
           ]
         }
+        testID="password-input"
         underlineColorAndroid="rgba(0, 0, 0, 0)"
         value="password"
       />
     </View>
-  </View>
-  <View
-    style={
-      Object {
-        "flex": 1,
-        "flexDirection": "column",
-        "justifyContent": "flex-end",
-        "paddingHorizontal": 20,
-      }
-    }
-  >
-    <Text
-      style={
-        Object {
-          "color": "#FFF",
-          "marginBottom": 20,
-        }
-      }
-    >
-      This screen uses 
-      <Text
-        style={
-          Object {
-            "color": "yellow",
-          }
-        }
-      >
-        @react-native-community/blur 
-      </Text>
-      (a native module) to display a blurred background
-    </Text>
     <View
       style={
         Object {
@@ -559,43 +435,10 @@ exports[`Login renders without crashing on Android 1`] = `
       ]
     }
   >
-    <Image
-      onLoadEnd={[Function]}
-      resizeMode="stretch"
-      source={1}
-      style={
-        Object {
-          "bottom": 0,
-          "left": 0,
-          "position": "absolute",
-          "right": 0,
-          "top": 0,
-        }
-      }
-    />
-    <BlurView
-      blurAmount={10}
-      blurType="dark"
-      style={
-        Array [
-          Object {
-            "backgroundColor": "transparent",
-          },
-          Object {
-            "bottom": 0,
-            "left": 0,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-          },
-        ]
-      }
-      viewRef={null}
-    />
     <Text
       style={
         Object {
-          "color": "#FFF",
+          "color": "#1745D5",
           "fontSize": 23,
           "fontWeight": "600",
           "marginBottom": 8,
@@ -609,7 +452,7 @@ exports[`Login renders without crashing on Android 1`] = `
     <Text
       style={
         Object {
-          "color": "#FFF",
+          "color": "#9FA7BC",
           "fontSize": 17,
           "fontWeight": "400",
           "letterSpacing": 0.2,
@@ -629,7 +472,7 @@ exports[`Login renders without crashing on Android 1`] = `
       <Text
         style={
           Object {
-            "color": "#FFF",
+            "color": "#9FA7BC",
             "fontSize": 13,
             "fontWeight": "600",
             "marginBottom": 10,
@@ -651,7 +494,7 @@ exports[`Login renders without crashing on Android 1`] = `
               "borderColor": "#D5DEF1",
               "borderRadius": 4,
               "borderWidth": 1,
-              "color": "#FFF",
+              "color": "#646565",
               "fontSize": 15,
               "fontWeight": "400",
               "padding": 16,
@@ -659,6 +502,7 @@ exports[`Login renders without crashing on Android 1`] = `
             false,
           ]
         }
+        testID="email-input"
         underlineColorAndroid="rgba(0, 0, 0, 0)"
         value="dgeslin@makingsense.com"
       />
@@ -673,7 +517,7 @@ exports[`Login renders without crashing on Android 1`] = `
       <Text
         style={
           Object {
-            "color": "#FFF",
+            "color": "#9FA7BC",
             "fontSize": 13,
             "fontWeight": "600",
             "marginBottom": 10,
@@ -695,7 +539,7 @@ exports[`Login renders without crashing on Android 1`] = `
               "borderColor": "#D5DEF1",
               "borderRadius": 4,
               "borderWidth": 1,
-              "color": "#FFF",
+              "color": "#646565",
               "fontSize": 15,
               "fontWeight": "400",
               "padding": 16,
@@ -703,41 +547,11 @@ exports[`Login renders without crashing on Android 1`] = `
             false,
           ]
         }
+        testID="password-input"
         underlineColorAndroid="rgba(0, 0, 0, 0)"
         value="password"
       />
     </View>
-  </View>
-  <View
-    style={
-      Object {
-        "flex": 1,
-        "flexDirection": "column",
-        "justifyContent": "flex-end",
-        "paddingHorizontal": 20,
-      }
-    }
-  >
-    <Text
-      style={
-        Object {
-          "color": "#FFF",
-          "marginBottom": 20,
-        }
-      }
-    >
-      This screen uses 
-      <Text
-        style={
-          Object {
-            "color": "yellow",
-          }
-        }
-      >
-        @react-native-community/blur 
-      </Text>
-      (a native module) to display a blurred background
-    </Text>
     <View
       style={
         Object {
