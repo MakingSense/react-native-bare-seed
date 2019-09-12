@@ -1,5 +1,5 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { mount } from 'enzyme';
 import renderer from 'react-test-renderer';
 
 import TodoList, { ITodoListProps } from './TodoList';
@@ -8,6 +8,8 @@ import { getState, getUser_1, getTodo_1 } from '../../../test/entities';
 
 describe('TodoList', () => {
   let props: ITodoListProps;
+  let wrapper;
+  global.console.error = () => null;
   beforeEach(() => {
     props = {
       currentUser: getUser_1(),
@@ -22,9 +24,12 @@ describe('TodoList', () => {
   });
 
   it('should onEndReached', () => {
-    const wrapper = shallow(<TodoList {...props} />);
     props.todoMap = { [getTodo_1()._id]: getTodo_1() };
-    (wrapper.instance() as any).onEndReached(getTodo_1())();
+    wrapper = mount(<TodoList {...props} />);
+    wrapper
+      .find('FlatList')
+      .props()
+      .onEndReached();
     expect(props.fetchTodoList).toBeCalledWith({ page: 1, limit: ENV.PAGINATION.LIMIT, q: { createdAt$ls: getTodo_1().createdAt } });
   });
 });
