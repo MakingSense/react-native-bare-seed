@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		06101D71C71249338F058CD0 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 80CD1DE3C0B243D0809577CA /* FontAwesome.ttf */; };
 		0814042FC4B45709EE682974 /* libPods-bareseed.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C325A9F08818BD575A82F81 /* libPods-bareseed.a */; };

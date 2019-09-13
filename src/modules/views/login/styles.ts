@@ -3,7 +3,7 @@ import { STYLE } from '../../../constants';
 
 export default StyleSheet.create({
   heading1: {
-    color: STYLE.COLOR.WHITE,
+    color: STYLE.COLOR.PRIMARY,
     fontSize: STYLE.FONT.SIZE.HEADING_1,
     fontWeight: STYLE.FONT.WEIGHTS.MEDIUM,
     marginBottom: 8,
@@ -11,7 +11,7 @@ export default StyleSheet.create({
     textAlign: 'left'
   },
   heading2: {
-    color: STYLE.COLOR.WHITE,
+    color: STYLE.COLOR.QUATERNARY,
     fontSize: STYLE.FONT.SIZE.HEADING_2,
     fontWeight: STYLE.FONT.WEIGHTS.REGULAR,
     letterSpacing: 0.2,
@@ -30,7 +30,7 @@ export default StyleSheet.create({
     borderColor: STYLE.COLOR.OCTANARY,
     borderRadius: 4,
     borderWidth: 1,
-    color: STYLE.COLOR.WHITE,
+    color: STYLE.COLOR.SENARY,
     fontSize: STYLE.FONT.SIZE.PARAGRAPH,
     fontWeight: STYLE.FONT.WEIGHTS.REGULAR,
     padding: 16,
@@ -43,7 +43,7 @@ export default StyleSheet.create({
     borderWidth: 1
   },
   inputLabel: {
-    color: STYLE.COLOR.WHITE,
+    color: STYLE.COLOR.QUATERNARY,
     fontSize: STYLE.FONT.SIZE.PARAGRAPH_SMALL,
     fontWeight: STYLE.FONT.WEIGHTS.MEDIUM,
     marginBottom: 10
@@ -55,19 +55,6 @@ export default StyleSheet.create({
   },
   keyboardContainer: {
     paddingHorizontal: 20
-  },
-  footerContainer: {
-    flexDirection: 'column',
-    flex: 1,
-    justifyContent: 'flex-end',
-    paddingHorizontal: 20
-  },
-  footer: {
-    marginBottom: 20,
-    color: STYLE.COLOR.WHITE
-  },
-  highlight: {
-    color: 'yellow'
   },
   buttonDisabled: {
     backgroundColor: STYLE.COLOR.QUATERNARY
