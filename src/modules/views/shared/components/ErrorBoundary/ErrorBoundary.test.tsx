@@ -16,7 +16,7 @@ describe('ErrorBoundaryTest', () => {
   global.console.error = () => {
     /** */
   };
-  it('renders child', () => {
+  it('should render child', () => {
     const rendered = renderer
       .create(
         <ErrorBoundary>
@@ -27,7 +27,7 @@ describe('ErrorBoundaryTest', () => {
     expect(rendered).toMatchSnapshot();
   });
 
-  it('renders placeholder when child render fails', () => {
+  it('should render placeholder when child render fails', () => {
     const rendered = renderer
       .create(
         <ErrorBoundary>

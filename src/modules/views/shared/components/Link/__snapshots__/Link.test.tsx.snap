@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Link renders without crashing 1`] = `
+exports[`Link should render 1`] = `
 <View
   accessible={true}
   isTVSelectable={true}
@@ -33,7 +33,7 @@ exports[`Link renders without crashing 1`] = `
 </View>
 `;
 
-exports[`Link renders without crashing with text 1`] = `
+exports[`Link should render with text 1`] = `
 <View
   accessible={true}
   isTVSelectable={true}

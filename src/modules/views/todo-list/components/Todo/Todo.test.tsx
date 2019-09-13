@@ -1,17 +1,21 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { create } from 'react-test-renderer';
+import { mount } from 'enzyme';
 
 import Todo, { ITodoProps } from './Todo';
 import { getTodo_1 } from '../../../../../test/entities';
 
 describe('Login', () => {
   let props: ITodoProps;
+  let wrapper;
+
+  global.console.error = () => null;
   beforeEach(() => {
     props = { todo: getTodo_1() };
+    wrapper = mount(<Todo {...props} />);
   });
 
-  it('renders without crashing', () => {
-    const rendered = renderer.create(<Todo {...props} />).toJSON();
-    expect(rendered).toMatchSnapshot();
+  it('should render', () => {
+    expect(create(wrapper).toJSON()).toMatchSnapshot();
   });
 });

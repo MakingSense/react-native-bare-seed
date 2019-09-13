@@ -10,7 +10,7 @@ describe('Avatar', () => {
       avatar: 'https://avatar.jpg'
     };
   });
-  it('renders without crashing', () => {
+  it('should render', () => {
     const rendered = renderer.create(<Avatar {...props} />).toJSON();
     expect(rendered).toMatchSnapshot();
   });
