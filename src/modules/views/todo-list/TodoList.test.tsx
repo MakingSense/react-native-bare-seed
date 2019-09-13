@@ -1,6 +1,6 @@
 import React from 'react';
 import { mount } from 'enzyme';
-import renderer from 'react-test-renderer';
+import { create } from 'react-test-renderer';
 
 import TodoList, { ITodoListProps } from './TodoList';
 import { ENV } from '../../../constants';
@@ -9,6 +9,7 @@ import { getState, getUser_1, getTodo_1 } from '../../../test/entities';
 describe('TodoList', () => {
   let props: ITodoListProps;
   let wrapper;
+
   global.console.error = () => null;
   beforeEach(() => {
     props = {
@@ -16,11 +17,11 @@ describe('TodoList', () => {
       todoMap: getState().todo.todoMap,
       fetchTodoList: jest.fn()
     };
+    wrapper = mount(<TodoList {...props} />);
   });
 
-  it('renders without crashing', () => {
-    const rendered = renderer.create(<TodoList {...props} />).toJSON();
-    expect(rendered).toMatchSnapshot();
+  it('should render', () => {
+    expect(create(wrapper).toJSON()).toMatchSnapshot();
   });
 
   it('should onEndReached', () => {

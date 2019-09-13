@@ -11,12 +11,12 @@ describe('Link', () => {
       url: 'https://url.jpg'
     };
   });
-  it('renders without crashing', () => {
+  it('should render', () => {
     const rendered = renderer.create(<Link {...props} />).toJSON();
     expect(rendered).toMatchSnapshot();
   });
 
-  it('renders without crashing with text', () => {
+  it('should render with text', () => {
     props = {
       url: 'https://url.jpg',
       text: 'This is a Link'

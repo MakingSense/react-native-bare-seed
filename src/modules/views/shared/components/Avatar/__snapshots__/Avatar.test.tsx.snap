@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Avatar renders without crashing 1`] = `
+exports[`Avatar should render 1`] = `
 <Image
   source={
     Object {
