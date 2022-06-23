@@ -74,7 +74,7 @@
     "jest-enzyme": "^7.1.1",
     "jest-expo": "^34.0.1",
     "jetifier": "^1.6.4",
-    "jsdom": "^15.1.1",
+    "jsdom": "^16.5.0",
     "npx": "^10.2.0",
     "pre-commit": "^1.2.2",
     "prettier": "^1.18.2",
